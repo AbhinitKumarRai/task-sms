@@ -1,0 +1,68 @@
+{
+  "name": "school-api",
+  "version": "1.0.0",
+  "description": "School Management System API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "jest --watchAll",
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aeon-machine": "^0.0.9",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "ion-cortex": "^1.3.6",
+    "ion-streamer": "^1.0.0",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.2.1",
+    "nanoid": "^3.3.2",
+    "oyster-db": "*",
+    "qantra-pineapple": "^1.0.7",
+    "redis": "^4.6.13",
+    "request-ip": "^2.1.3",
+    "useragent": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "ioredis-mock": "^8.9.0",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^9.1.6",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "moduleNameMapper": {
+      "^@app(.*)$": "<rootDir>/app$1"
+    },
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "verbose": true,
+    "forceExit": true,
+    "clearMocks": true,
+    "resetMocks": true,
+    "restoreMocks": true,
+    "testTimeout": 30000
+  }
+}
