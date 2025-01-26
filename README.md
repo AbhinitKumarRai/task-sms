@@ -54,7 +54,7 @@ npm run dev
 yarn dev
 ```
 
-The API will be available at `http://localhost:5111/api`
+The API will be available at `http://159.89.175.201:5111/api`
 
 ## Database Schema
 
